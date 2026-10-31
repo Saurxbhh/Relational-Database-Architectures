@@ -51,15 +51,22 @@ Click on any core module accordion below to expand the underlying structural sou
 ---
 
 ## 🚀 Deployment & Operational Execution
-1. Initialize core system tables sequentially to preserve foreign key dependancies:
+To compile and execute these relational modules on your live database instance, run the scripts sequentially to preserve cascading referential integrity chains:
+
+1. **Initialize Core Structural Schema Blueprints (DDL):**
    ```sql
    @01-DDL-Schemas/UniversitySchema.sql;
+   @01-DDL-Schemas/ECommerceSchema.sql;
    ```
-2. Execute transaction querying trees or analytical window passes:
+
+2. **Execute Analytical Query Matrices & Performance Passes (DML):**
    ```sql
    @02-DML-Queries/AdvancedQueries.sql;
+   @02-DML-Queries/WindowFunctions.sql;
    ```
-3. Compile the procedural triggers and cursor blocks directly onto your live instance buffer:
+
+3. **Compile Automated Automation Engines & Ledgers onto the Instance Buffer (PL/SQL):**
    ```sql
    @03-PLSQL-Objects/AuditTriggers.sql;
+   @03-PLSQL-Objects/CursorBilling.sql;
    ```
